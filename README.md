@@ -8,7 +8,7 @@ Built with **Django**, **Bootstrap** and **PostgreSQL / SQLite**.
 
 Static preview of the main pages, hosted on GitHub Pages:
 
-**https://YOUR-USERNAME.github.io/urban-services/**
+**https://Rushabh-28.github.io/urban-services/**
 
 Pages in the preview: Home · About Us · Contact · Terms · Payment · Thank-you.
 Login, registration and booking need the full Django app (see "Run locally" below).
