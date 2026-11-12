@@ -1,0 +1,189 @@
+#head {
+  background: black;
+  width: 100%;
+  height: 60px;
+}
+
+#mainlogo {
+  margin: 5px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.register {
+  float: right;
+  color: white;
+  margin: 10px;
+  paddingleft: 10px; /* Corrected typo: paddingleft to padding-left */
+  font-align: center; /* Corrected typo: font-align to text-align */
+  font-size: 15px;
+}
+
+#mainpage {
+  float: right;
+  width: 50%;
+  height: 500px;
+  background: black;
+}
+
+.text {
+  color: white;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.highlights {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.heading1 {
+  font-size: 40px;
+}
+
+.smallheading {
+  font-size: 25px;
+}
+
+#search {
+  margin-left: 30px;
+  float: left;
+  width: 50%;
+  background: white;
+  height: 110px;
+}
+
+.searchtext {
+  margin: 20px 0px 0px 20px;
+  font-size: 20px;
+}
+
+select {
+  width: 90%;
+  margin: 5px 0px 0px 20px;
+  height: 50px;
+  background: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.mainimage {
+  height: 500px;
+}
+
+.text2 {
+  margin-left: 100px;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+#sidebox2 {
+  width: 35%;
+  height: 150px;
+  margin-left: 100px;
+}
+
+#sideimg {
+  height: 100px;
+  float: left;
+  padding: 15px;
+}
+
+#rightbox {
+  float: right;
+  width: 40%;
+  height: 400px;
+  margin-right: 100px;
+}
+
+.textright {
+  float: left;
+  margin-left: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.conright {
+  float: left;
+  font-size: 20px;
+}
+
+#quality {
+  height: 150px;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.text2Head {
+  padding: 15px;
+  font-size: 25px;
+}
+
+#midbox {
+  height: 500px;
+  width: auto;
+}
+
+#footer {
+  width: auto;
+  margin-top: 50px;
+  height: 550px;
+  background: black;
+}
+
+.foottext {
+  float: left;
+  color: white;
+  margin: 15px;
+  padding: 10px;
+}
+
+.footleft {
+  margin-left: 100px;
+}
+
+.line {
+  clear: left;
+  color: white;
+}
+
+.foottext2 {
+  color: white;
+  margin-left: 100px;
+}
+
+.state {
+  float: left;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+}
+
+.foots {
+  clear: left;
+  margin-left: 90px;
+}
+
+.footimg {
+  float: left;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 100px;
+  
+}
+
+.set {
+  margin-top: 30px;
+}
+
+.icons {
+  height: 50px;
+}
+
+
+
+
+
+

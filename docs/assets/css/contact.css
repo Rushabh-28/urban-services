@@ -1,0 +1,84 @@
+
+
+/*-------------------------------------------------------------   Contact us pages    ---------------------------------------------------------*/
+.section {
+    float: left;
+    width: 100%;
+    padding: 55px 0px;
+}
+
+.space {
+    margin-bottom: 0px;
+}
+
+.query-form-box.space img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0px 0px 50px 0px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid #ffc116;
+    position: absolute;
+    top: 19%;
+    height: 5px;
+    width: 95%;
+}
+.contact-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0px 0px 50px 0px;
+}
+.contact-box p {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    padding: 15px 0px;
+    padding-left: 100px;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+}
+
+.contact-box p span {
+    position: absolute;
+    left: 0;
+    color: #006bb6;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.query-form-box .form-control {
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #006bb6;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+}
+
+.map {
+    float: left;
+    width: 100%;
+    height: 400px;
+}
