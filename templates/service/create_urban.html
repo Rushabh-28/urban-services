@@ -1,0 +1,71 @@
+{% load static %}
+
+<style>
+  .card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="card">
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+{% comment %}     
+    <div class="form-group">
+      <label for="{{ form.name.id_for_label }}">Name:</label>
+      {{ form.name }}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.price.id_for_label }}">Price:</label>
+        {{ form.price }}
+    </div> {% endcomment %}
+
+    <!-- Add more fields as needed -->
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %} {{form.as_p}}
+        <input type="submit" value="Upload" />
+      </form>
+      
+    
+  </form>
+</div>
+
+{% comment %} {% load static %}
+
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %} {{form.as_p}}
+  <input type="submit" value="Upload" />
+</form> {% endcomment %}

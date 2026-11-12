@@ -1,0 +1,60 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Update the link tag to reference the CSS file in the correct path -->
+    <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}">
+    <title>Contact Us</title>
+</head>
+<body>
+
+<div class="section">
+    <div class="container">
+        <div class="row space">
+            <div class="col-sm-5 col-xs-12 col-sm-5">
+                <div class="contact-box">
+                    {% comment %} <img src="https://staticking.in/staticking.in/bittu/gati/images/cat.png" alt="Computer-Images-MD"> {% endcomment %}
+                    <hr>
+                    <p><span><i class="fa fa-map"></i> Company : </span> Arth Infosoft Pvt. Ltd.</p>
+                    <p><span><i class="fa fa-map"></i> Address : </span>306, Hir-Asha Arcade, Sola Gam Rd, opp. Sagar Sangeet Apartment, Kargil, Gujarat 380060</p>
+                    {% comment %} <p><span><i class="fa fa-phone"></i> Phone : </span> 9879310901</p> {% endcomment %}
+                    <p><span><i class="fa fa-mobile"></i> Mobile : </span> 9879310901</p>
+                    <p><span><i class="fa fa-envelope"></i> Email : </span> kinjal@arthinfosoft.in</p>
+                    <p><span><i class="fa fa-envelope"></i>Owner : </span> Mayank Patel</p>
+                </div>
+            </div><br><br>
+            <div class="col-sm-7 col-sm-7 col-xs-12">
+                <div class="query-form-box space">
+                    {% comment %} <img src="https://staticking.in/staticking.in/bittu/gati/images/qu.png" alt="computer-banner-MD-Iamges"> {% endcomment %}
+                    <hr>
+                    <form action="functions.php" method="post">
+                        <div class="from-box-tem">
+                            <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Name" required=""></div>
+                            <div class="col-md-6"><input type="text" name="city" class="form-control" placeholder="City" required=""></div>
+
+                            <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Email ID" required=""></div>
+
+                            <div class="col-md-6"><input type="text" name="phone" maxlength="10" class="form-control" placeholder="Mobile No." required=""></div>
+
+                            <div class="col-md-12"><textarea class="form-control" placeholder="Message" rows="3" required="" style="height:auto !important;"></textarea></div>
+
+                            <div class="col-md-12">
+                                <button type="submit" class="button" style="border: none;">
+                                    <a href="{% url 'submit' %}" style="color: white; text-decoration: none;">Submit</a>
+                                </button>
+                                
+                                {% comment %} <button type="submit" class="button" style="border: none;"><a href="http://localhost:8000/user/submit/">Submit</a></button> {% endcomment %}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

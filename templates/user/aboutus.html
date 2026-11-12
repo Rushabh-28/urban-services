@@ -1,0 +1,46 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Update the link tag to reference the CSS file in the correct path -->
+    <link rel="stylesheet" href="{% static 'assets/css/aboutus.css' %}">
+    <title>About Us</title>
+</head>
+<body>
+
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>About
+                <span>Us</span></h2>
+            <p>Urban Service provides a platform that allows skilled and experienced professionals to connect with users looking for specific services. 
+                <br>
+                Once on the platform, our match-making algorithm identifies professionals who are closest to the user's requirements and available at the requested time and date.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'assets/images/serviceimg.jpg' %}" alt="about" class="img-fluid" height = "500px", width = "500px">
+            </div><br><br>
+            <div class="col-lg-6">
+                <h3>Our Vision: Empower millions of professionals worldwide to deliver services at home like never experienced before.</h3>
+                <p>Urban Service is a technology platform offering a variety of services at home. 
+                Customers use our platform to book services such as beauty treatments, haircuts, massage therapy,<br>
+                 cleaning, plumbing, carpentry, appliance repair, painting, etc. These services are delivered in the comfort 
+                 of their home and at a time of their choosing. We promise our <br>customers a high quality, standardized, and
+                  reliable service experience. To fulfill this promise, we work closely with our hand-picked service partners, 
+                  enabling <br>them with technology, training, products, tools, financing, insurance, and brand, helping them succeed 
+                  and deliver on this promise.
+                </p>
+            </div>
+        </div>
+    </div>
+                           
+                </section>
+
+
+</body>
+</html>

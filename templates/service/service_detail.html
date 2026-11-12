@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details View</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto; /* Added margin for better spacing */
+        }
+
+        .card {
+            border: none;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+            border-bottom: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Details View</h1>
+        <div class="card">
+            <div class="card-header">
+                Details
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Name</th>
+                        <td>{{service.name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Service Name</th>
+                        <td>{{service.service_name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Category</th>
+                        <td>{{service.cat}}</td>
+                    </tr>
+                    <tr>
+                        <th>Sub Category</th>
+                        <td>{{service.subcategory}}</td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td>{{service.type}}</td>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <td>{{service.fees_amount}}</td>
+                    </tr>
+                    <tr>
+                        <th>Area</th>
+                        <td>{{service.area}}</td>
+                    </tr>
+                    <tr>
+                        <th>State</th>
+                        <td>{{service.state}}</td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td>{{service.city}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts here if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+{% comment %} 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6); /* Gradient background color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h1 {
+  text-align: center;
+}
+
+</style>
+</head><div class="container">
+  <h1>Details View</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Service Name</th>                
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Area</th>
+      <th>State</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>{{service.name}}</td>
+      <td>{{service.service_name}}</td>
+      <td>{{service.cat}}</td>
+      <td>{{service.subcategory}}</td>
+      <td>{{service.type}}</td>
+      <td>{{service.fees_amount}}</td>
+      <td>{{service.area}}</td>
+      <td>{{service.city}}</td>
+      <td>{{service.state}}</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>  {% endcomment %}

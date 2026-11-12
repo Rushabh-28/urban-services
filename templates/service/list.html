@@ -1,0 +1,97 @@
+{% extends "../base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+      <div class="card mb-4">
+        <div class="card-header pb-0">
+          <h6>Service LIST</h6>
+          <a href = "{% url 'service_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addServiceModal">Add Service</a>
+        </div>
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Service Name</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Category</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Subcategory</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Type</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Fees Amount</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Area</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">City</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">State</th>
+                  <th class="text-secondary opacity-7">ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for service in services %}
+
+                <tr>
+                  <td>
+                    <div class="d-flex px-2 py-1">
+                      {% comment %} <div>
+                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+                      </div> {% endcomment %}
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">{{service.name}}</h6>
+                        <p class="text-xs text-secondary mb-0">manan21@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">{{service.service_name}}</p>
+                    
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">{{service.cat}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.subcategory}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.type}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.fees_amount}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.area}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.city}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{service.state}}</span>
+                  </td>                  
+                   <td class="align-middle">
+                    <a href="{% url 'update_service' service.id %}" class="btn btn-success" data-toggle="tooltip" data-original-title="Edit user">
+                      EDIT
+                    </a> 
+                    <a href="{% url 'detail_service' service.id %}" class="btn btn-primary" data-toggle="tooltip" data-original-title="Edit user">
+                      DETAIL
+                    </a>
+                    <a href="{% url 'delete_service' service.id %}" class="btn btn-danger" data-toggle="tooltip" data-original-title="Edit user">
+                      DELETE
+                    </a>
+                    {% comment %} <a href="{% url 'service_create' %}" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Add Sevice
+                    </a> {% endcomment %}
+                  </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+{% endblock content %}
+
+    
+    

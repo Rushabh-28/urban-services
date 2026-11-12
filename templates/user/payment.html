@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Link to your payment.css file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/payment.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <h4>Account</h4>
+                <div class="input-group input-group-icon">
+                    <input type="text" placeholder="Full Name">
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="email" placeholder="Email Address">
+                    <div class="input-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="password" placeholder="Password">
+                    <div class="input-icon">
+                        <i class="fa fa-key"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-half">
+                    <h4>Date of Birth</h4>
+                    <div class="input-group">
+                        <div class="col-third">
+                            <input type="text" placeholder="DD">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" placeholder="MM">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <h4>Gender</h4>
+                    <div class="input-group">
+                        <input id="gender-male" type="radio" name="gender" value="male">
+                        <label for="gender-male">Male</label>
+                        <input id="gender-female" type="radio" name="gender" value="female">
+                        <label for="gender-female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Payment Details</h4>
+                <div class="input-group">
+                    <input id="payment-method-card" type="radio" name="payment-method" value="card" checked="true">
+                    <label for="payment-method-card">
+                        <span><i class="fa fa-cc-visa"></i> Credit Card</span>
+                    </label>
+                    <input id="payment-method-paypal" type="radio" name="payment-method" value="paypal">
+                    <label for="payment-method-paypal">
+                        <span><i class="fa fa-cc-paypal"></i> Paypal</span>
+                    </label>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="text" placeholder="Card Number">
+                    <div class="input-icon">
+                        <i class="fa fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Card CVC">
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="input-group">
+                        <select>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                            <!-- Add more options for month -->
+                        </select>
+                        <select>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <!-- Add more options for year -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Terms and Conditions</h4>
+                <div class="input-group">
+                    <input id="terms" type="checkbox">
+                    <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                </div>
+            </div><br>
+            <!-- Submit button -->
+            <div class="row text-center">
+                <a class="align-self-end card-link" data-bss-hover-animate="pulse" href="{% url 'home' %}" style="padding: 4px;background: #b86868;color: rgb(255,255,255);border-radius: 17px;padding-right: 14px;padding-left: 14px;padding-bottom: 6px;font-family: 'Source Sans Pro', sans-serif;margin-top: auto;box-shadow: 2px 2px 16px 1px rgba(117,117,117,0.8);">Submit</a>
+            </div>
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>

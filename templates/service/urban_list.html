@@ -1,0 +1,25 @@
+{% load static %}
+
+<div>
+    {% for u in urban %}
+        <div>
+            <h1>{{ u.name }}</h1>
+            {% if u.urbanImage %}
+            
+                <img src="{{ u.urbanImage.url }}" alt="urban image" style="width: 100px; height: 100px;">
+            {% else %}
+                <p>No image available</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+
+{% comment %} {% load static %}
+
+<div>
+    {% for u in urban %}
+        <h1>{{ u.name }}</h1>
+        <img src="{{ u.urbanImage.url }}" alt="urban image" style="width: 100px; height: 100px;">
+    {% endfor %}
+</div> {% endcomment %}
